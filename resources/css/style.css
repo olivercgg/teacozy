@@ -5,3 +5,40 @@ body {
   /** background-color: black; **/
   opacity: 0.9;
 }
+
+div {
+  border: 1px solid black;
+}
+
+/** Header **/
+header {
+  display: flex;
+  position: fixed;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  z-index: 5;
+}
+
+header img {
+  height: 50px;
+  padding: 10px;
+}
+
+header a {
+  color: white;
+}
+
+header nav {
+  text-align: right;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+header span {
+  display: inline-block;
+  text-align: right;
+  padding: 10px;
+}
