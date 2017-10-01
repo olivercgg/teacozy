@@ -11,6 +11,10 @@ div {
   border: 1px dotted white;
 }
 
+main {
+    border: 1px dotted blue;
+}
+
 /** Header **/
 header {
   display: flex;
@@ -52,17 +56,48 @@ header span {
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-direction: coludmn;
+  flex-wrap: wrap;
 }
 
+/** Mission Section **/
 #mission {
   padding-top: 70px;
   height: 700px;
   width: 1200px;
   background-image: url(../images/img-mission-background.jpg);
+  margin: auto;
 }
 
 #mission .text {
   margin: auto;
   width: 100%;
   background-color: black;
+  flex-wrap: wrap;
+}
+
+/** Featured Section **/
+#featured {
+  padding-top: 40px;
+  width: 1000px;
+  margin: auto;
+}
+
+#featured img {
+  height: 200px;
+  width: 300px;
+  padding: 5px;
+  margin: 0px;
+}
+/** After setting [margin: 0px;] for both the [img] and [h4] element,
+chromo DevTools shows that there still seems to be space between the two elements
+I'm not sure how to fix this.**/
+.featured-items {
+  margin: 5px;
+}
+
+.featured-items h4 {
+  padding: 5px;
+  margin: 0px;
+  top: 0;
 }
