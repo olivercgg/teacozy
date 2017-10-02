@@ -61,7 +61,6 @@ header span {
   display: flex;
   justify-content: center;
   align-content: center;
-  flex-direction: coludmn;
   flex-wrap: wrap;
 }
 
