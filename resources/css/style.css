@@ -7,15 +7,8 @@ body {
   text-align: center;
 }
 
-div {
-  border: 1px dotted white;
-}
 
-main {
-    border: 1px dotted blue;
-}
-
-h2, h3, h4 {
+h2, h4 {
   margin: 0px;
   padding: 10px;
 }
@@ -82,9 +75,9 @@ header span {
   flex-wrap: wrap;
 }
 
-/** Featured Section **/
+/** Featured Section (add enough padding so header does not block after local link) **/
 #featured {
-  padding-top: 40px;
+  padding-top: 70px;
   width: 1000px;
   margin: auto;
 }
@@ -106,11 +99,12 @@ header span {
 /** Locations Section **/
 #locations {
   margin: 60px auto 0px auto;
-  padding-top: 60px;
+  padding-top: 70px;
   width: 1200px;
   height: 500px;
   background-image: url(../images/img-locations-background.jpg);
-  align-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .locations-section {
